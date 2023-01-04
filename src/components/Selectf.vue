@@ -64,7 +64,6 @@ export default {
       selected2: null,
       selected3: null,
       selected4: null,
-      pob2015: Pob2015,
       pob2016: Pob2016,
       pob2017: Pob2017,
       pob2018: Pob2018,
