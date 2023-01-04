@@ -76,11 +76,20 @@ export default {
     clear() {
       // this.selected1 = null
       // this.selected2 = null
-      if (this.selected3 != null) {
-        this.selected3 = this.selected3
-      } else {
+      // if (this.selected3 != null) {
+      //   this.selected3 = this.selected3
+      // } else {
+      //   this.selected3 = null
+      // }
+
+      if (this.selected1 === 'categoria1' || this.selected1 === 'categoria2') {
+        this.selected1 = this.selected1   
+      }else {
         this.selected3 = null
       }
+
+
+      console.log(this.selected1,this.selected2,this.selected3)
     },
     pob() {
       if (this.selected2 === '2016') {
@@ -156,7 +165,7 @@ export default {
               <div class="align-self-center">
                 <!-- Tercer Select(mes) si la categoria lo permite -->
                 <div class="col-md-auto">
-                  <select v-model="selected3" class="form-select" aria-label=".form-select-lg example">
+                  <select v-model="selected4" class="form-select" aria-label=".form-select-lg example">
                     <option v-for="cat in categoriasO" :value="cat.value" :key="cat.id">
                       {{ cat.text }}
                     </option>
